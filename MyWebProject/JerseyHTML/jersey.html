@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jersey</title>
+    <link rel="icon" href="/img/logoWhite.png">
+
+  
+    <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap-theme.min.css" integrity="sha384-6pzBo3FDv/PJ8r2KRkGHifhEocL+1X2rVCTTkUfGk7/0pbek5mMa1upzvWbrUbOZ" crossorigin="anonymous">
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="/Style/jersey.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body>
+  <section class="header">
+    <div class="top_head">
+        <ul>
+          <li><a href="login.html"><i class="fa-solid fa-circle-user"></i></a></li>
+          <li><a href="addToCart.html"><i class="fa-solid fa-cart-shopping"></i></a></li>
+        </ul>
+      </div>
+    <nav class="nav_bar">
+      <a href="index.html"><img src="/img/logo.png" alt=""></a>
+      <div class="list" id="list">
+        <i class="fa fa-times" onclick="hideMenu()"></i>
+        <ul>
+          <li><a href="index.html">HOME</a></li>
+          <li><a href="shoes.html">SHOES</a></li>
+          <li><a id="jersey" href="jersey.html">JERSEY</a></li>
+          <li><a href="aboutUS.html">ABOUT US</a></li>
+        </ul>
+      </div>
+      <i class="fa fa-bars" onclick="showMenu()"></i>
+    </nav>
+  </section>
+
+  <section class="banner">
+    <div class="banner_box">
+      
+    </div>
+  </section>
+
+  <section class="jersey">
+    <div class="logoTeam">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="sub_box">
+                  <img class="barca" src="/img/barcaLogo.png" alt="">
+                </div>
+            </div>
+            <div class="col-md-4">
+              <div class="sub_box">
+                <img src="/img/realLogo.png" alt="">
+              </div>
+          </div>
+          <div class="col-md-4">
+            <div class="sub_box">
+              <img src="/img/camLogo.png" alt="">
+            </div>
+        </div>
+        </div>
+    </div>
+  </section>
+
+  <section class="shirt">
+    <div class="shirt">
+      <div class="row">
+        <div class="col-md-4">
+          <div class="sub_shirt">
+            <img src="/img/BarcarHome.png" alt="">
+            <div class="information">
+              <p class="_title-shirt">FC Barcelona Jersey 2023</p>
+              <p class="stock">In Stock</p>
+              <p class="type_jersey">Home Jersey</p>
+              <p class="color">1 Color</p>
+              <p class="price" id="jp_1" value="90">90$</p>
+            </div>
+              <div class="qty">
+                <label for="">Quantity</label>
+                <input type="number" min="0" placeholder="0" id="qty">
+              </div>
+              <div class="_btn">
+                <div class="_btn_shop">
+                  <button onclick="shopNow_1()"><a  href="">Shop Now</a></button>
+                </div>
+                <div class="addToCart">
+                  <a href="">Add to Cart <i class="fa-solid fa-cart-shopping"></i></a>
+                </div>
+              </div>
+          </div>
+          <div class="sub_shirt">
+            <img src="/img/AwayBara.jpg" alt="">
+            <div class="information">
+              <p class="_title-shirt">FC Barcelona Jersey 2023</p>
+              <p class="stock">In Stock</p>
+              <p class="type_jersey">Home Jersey</p>
+              <p class="color">1 Color</p>
+              <p class="price">90$</p>
+            </div>
+              <div class="qty">
+                <label for="">Quantity</label>
+                <input type="number" min="0" placeholder="0">
+              </div>
+              <div class="_btn">
+                <div class="_btn_shop">
+                  <a href="">Shop Now</a>
+                </div>
+                <div class="addToCart">
+                  <a href="">Add to Cart <i class="fa-solid fa-cart-shopping"></i></a>
+                </div>
+              </div>
+          
+          </div>
+          <div class="sub_shirt">
+              <img class="thirt_barca" src="/img/AwayBarca.png" alt="">
+              <div class="information">
+                <p class="_title-shirt">FC Barcelona Jersey 2023</p>
+                <p class="stock">In Stock</p>
+                <p class="type_jersey">Home Jersey</p>
+                <p class="color">1 Color</p>
+                <p class="price" >90$</p>
+              </div>
+                <div class="qty">
+                  <label for="">Quantity</label>
+                  <input type="number" min="0" placeholder="0">
+                </div>
+                <div class="_btn">
+                  <div class="_btn_shop">
+                    <a href="">Shop Now</a>
+                  </div>
+                  <div class="addToCart">
+                    <a href="">Add to Cart <i class="fa-solid fa-cart-shopping"></i></a>
+                  </div>
+                </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="sub_shirt">
+              <img src="/img/RealHome.jpg" alt="">
+              <div class="information">
+                <p class="_title-shirt">FC Barcelona Jersey 2023</p>
+                <p class="stock">In Stock</p>
+                <p class="type_jersey">Home Jersey</p>
+                <p class="color">1 Color</p>
+                <p class="price">90$</p>
+              </div>
+                <div class="qty">
+                  <label for="">Quantity</label>
+                  <input type="number" min="0" placeholder="0">
+                </div>
+                <div class="_btn">
+                  <div class="_btn_shop">
+                    <a href="">Shop Now</a>
+                  </div>
+                  <div class="addToCart">
+                    <a href="">Add to Cart <i class="fa-solid fa-cart-shopping"></i></a>
+                  </div>
+                </div>
+          </div>
+          <div class="sub_shirt">
+              <img class="realAway" src="/img/RealAway.jpg" alt="">
+              <div class="information">
+                <p class="_title-shirt">FC Barcelona Jersey 2023</p>
+                <p class="stock">In Stock</p>
+                <p class="type_jersey">Home Jersey</p>
+                <p class="color">1 Color</p>
+                <p class="price">90$</p>
+              </div>
+                <div class="qty">
+                  <label for="">Quantity</label>
+                  <input type="number" min="0" placeholder="0">
+                </div>
+                <div class="_btn">
+                  <div class="_btn_shop">
+                    <a href="">Shop Now</a>
+                  </div>
+                  <div class="addToCart">
+                    <a href="">Add to Cart <i class="fa-solid fa-cart-shopping"></i></a>
+                  </div>
+                </div>
+          </div>
+          <div class="sub_shirt">
+              <img src="/img/TrainReal.png" alt="">
+              <div class="information">
+                <p class="_title-shirt">FC Barcelona Jersey 2023</p>
+                <p class="stock">In Stock</p>
+                <p class="type_jersey">Home Jersey</p>
+                <p class="color">1 Color</p>
+                <p class="price">90$</p>
+              </div>
+                <div class="qty">
+                  <label for="">Quantity</label>
+                  <input type="number" min="0" placeholder="0">
+                </div>
+                <div class="_btn">
+                  <div class="_btn_shop">
+                    <a href="">Shop Now</a>
+                  </div>
+                  <div class="addToCart">
+                    <a href="">Add to Cart <i class="fa-solid fa-cart-shopping"></i></a>
+                  </div>
+                </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="sub_shirt">
+              <img src="/img/HomeCam.png" alt="">
+              <div class="information">
+                <p class="_title-shirt">FC Barcelona Jersey 2023</p>
+                <p class="stock">In Stock</p>
+                <p class="type_jersey">Home Jersey</p>
+                <p class="color">1 Color</p>
+                <p class="price">90$</p>
+              </div>
+                <div class="qty">
+                  <label for="">Quantity</label>
+                  <input type="number" min="0" placeholder="0">
+                </div>
+                <div class="_btn">
+                  <div class="_btn_shop">
+                    <a href="">Shop Now</a>
+                  </div>
+                  <div class="addToCart">
+                    <a href="">Add to Cart <i class="fa-solid fa-cart-shopping"></i></a>
+                  </div>
+                </div>
+          </div>
+          <div class="sub_shirt">
+              <img src="/img/awayCam.png" alt="">
+              <div class="information">
+                <p class="_title-shirt">FC Barcelona Jersey 2023</p>
+                <p class="stock">In Stock</p>
+                <p class="type_jersey">Home Jersey</p>
+                <p class="color">1 Color</p>
+                <p class="price">90$</p>
+              </div>
+                <div class="qty">
+                  <label for="">Quantity</label>
+                  <input type="number" min="0" placeholder="0">
+                </div>
+                <div class="_btn">
+                  <div class="_btn_shop">
+                    <a href="">Shop Now</a>
+                  </div>
+                  <div class="addToCart">
+                    <a href="">Add to Cart <i class="fa-solid fa-cart-shopping"></i></a>
+                  </div>
+                </div>
+          </div>
+          <div class="sub_shirt">
+              <img src="/img/GKCam.png" alt="">
+              <div class="information">
+                <p class="_title-shirt">FC Barcelona Jersey 2023</p>
+                <p class="stock">In Stock</p>
+                <p class="type_jersey">Home Jersey</p>
+                <p class="color">1 Color</p>
+                <p class="price">90$</p>
+              </div>
+                <div class="qty">
+                  <label for="">Quantity</label>
+                  <input type="number" min="0" placeholder="0">
+                </div>
+                <div class="_btn">
+                  <div class="_btn_shop">
+                    <a href="">Shop Now</a>
+                  </div>
+                  <div class="addToCart">
+                    <a href="">Add to Cart <i class="fa-solid fa-cart-shopping"></i></a>
+                  </div>
+                </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="footer">
+    <div class="footer_web">
+      <div class="left">
+        <p  class="ques"> May we help you?</p>
+        <p class="contact"><a href="">Contact Us</a></p>
+        <p class="email"><a href="">Email</a></p>
+        <i class="fa-brands fa-facebook"></i>
+        <i class="fa-brands fa-telegram"></i>
+        <i class="fa-brands fa-twitter"></i>
+        <i class="fa-brands fa-instagram"></i>
+        <br><br>
+        <p><i class="fa-solid fa-copyright"></i> The Dream Sport 2023</p>
+      </div>
+      <div class="right">
+        <img src="/img/logoWhite.png" alt="">
+        <p class="text">
+          Discover a hidden gem for shoe enthusiasts at our boutique shoe shop, where elegance and individuality unite. Step into a world of carefully curated, unique footwear collections that speak to your distinctive taste. Uncover the perfect pair that complements your style and personality, making every step a statement.
+        </p>
+      </div>
+
+    </div>
+</section>
+
+</body>
+</html>
+<Script src="/JavaScript/web.js"></Script>
