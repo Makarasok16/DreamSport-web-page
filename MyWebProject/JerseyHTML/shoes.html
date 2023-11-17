@@ -14,18 +14,39 @@
 <!-- Latest compiled and minified JavaScript -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
-<link rel="stylesheet" href="/MyWebProject/Style/shoese.css">
+<!-- <link rel="stylesheet" href="/MyWebProject/Style/shoese.css"> -->
+<link rel="stylesheet" href="../Style/jersey.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 <script src="/MyWebProject/JavaScript/shouse.js"></script>
 </head>
 <body>
   <section class="header">
     <div class="top_head">
-        <ul>
-          <li><a href="login.html"><i class="fa-solid fa-circle-user"></i></a></li>
-          <li><a href="addToCart.html"><i class="fa-solid fa-cart-shopping"></i></a></li>
-        </ul>
+      <ul>
+        <li><a href="login.html"><i class="fa-solid fa-circle-user"></i></a></li>
+        <li><i class="fa-solid fa-cart-shopping" id="cart-icon"></i></li>
+      </ul>
+      <div class="cart">
+        <h2 class="cart-title">Your Cart</h2>
+
+          <!-- Content -->
+          <div class="cart-content">
+          
+
+          </div>
+
+          <!-- Total -->
+          <div class="total">
+              <div class="total-title">Total</div>
+              <div class="total-price">$0.00</div>
+          </div>
+
+          <!-- Buy Button -->
+          <button type="button" class="btn-buy">Buy Now</button>
+          <!-- cart close -->
+          <i class="fa fa-times" id="cart-close"></i>
       </div>
+  </div>
     <nav class="nav_bar">
       <a href="index.html"><img src="/MyWebProject/img/logo.png" alt=""></a>
       <div class="list" id="list">
@@ -78,207 +99,115 @@
       <div class="row">
         <div class="col-md-4">
           <div class="sub_shirt">
-            <img src="/MyWebProject/img/j1.png" alt="">
+            <img class="product-img" src="/MyWebProject/img/j1.png" alt="">
             <div class="information">
-              <p class="_title-shirt">Ari Jordan 1 Retro OG</p>
-              <p class="stock">In Stock</p>
-              <p class="type_jersey">Men’s Shoes</p>
-              <p class="color">3 Color</p>
-              <p class="price">2598$</p>
-            </div>
-              <div class="qty">
-                <label for="">Quantity</label>
-                <input type="number" min="0" placeholder="0">
-              </div>
-              <div class="_btn">
-                <div class="_btn_shop">
-                  <a href="/MyWebProject/JerseyHTML/payment.html">10% OFF</a>
-                </div>
-                <div class="addToCart">
-                  <a href="">Add to Cart <i class="fa-solid fa-cart-shopping"></i></a>
-                </div>
-              </div>
+            <p class="_title-shirt">Ari Jordan 1 Retro OG</p>
+            <p class="stock">In Stock</p>
+            <p class="type_jersey">Men’s Shoes</p>
+            <p class="color">1 Color</p>
+            <p class="price">2598$ </p>
+          </div>
+          <button class="add-cart"> Add to Cart <i class='fa-solid fa-cart-shopping '></i></button>
           </div>
           <div class="sub_shirt">
-            <img class="j2" src="/MyWebProject/img/j2.png" alt="">
+            <img class="product-img" class="j2" src="/MyWebProject/img/j2.png" alt="">
             <div class="information">
-              <p class="_title-shirt">Jordan 1 Off-White</p>
-              <p class="stock">In Stock</p>
-              <p class="type_jersey">Men’s Shoes</p>
-              <p class="color">2 Color</p>
-              <p class="price">1356$</p>
-            </div>
-              <div class="qty">
-                <label for="">Quantity</label>
-                <input type="number" min="0" placeholder="0">
-              </div>
-              <div class="_btn">
-                <div class="_btn_shop">
-                  <a href="">12% OFF</a>
-                </div>
-                <div class="addToCart">
-                  <a href="">Add to Cart <i class="fa-solid fa-cart-shopping"></i></a>
-                </div>
-              </div>
+            <p class="_title-shirt">Jordan 1 Off-White</p>
+            <p class="stock">In Stock</p>
+            <p class="type_jersey">Men’s Shoes</p>
+            <p class="color">2 Colors</p>
+            <p class="price">1356$</p>
+          </div>
+          <button class="add-cart"> Add to Cart <i class='fa-solid fa-cart-shopping '></i></button>
           
           </div>
           <div class="sub_shirt">
-              <img class="thirt_barca" src="/MyWebProject/img/j3.png" alt="">
+              <img class="product-img" src="/MyWebProject/img/j3.png" alt="">
               <div class="information">
                 <p class="_title-shirt">Jordan 4 Retro Thunder</p>
                 <p class="stock">In Stock</p>
                 <p class="type_jersey">Men’s Shoes</p>
-                <p class="color">4 Color</p>
+                <p class="color">4 Colors</p>
                 <p class="price">350$</p>
               </div>
-                <div class="qty">
-                  <label for="">Quantity</label>
-                  <input type="number" min="0" placeholder="0">
-                </div>
-                <div class="_btn">
-                  <div class="_btn_shop">
-                    <a href="">20% OFF</a>
-                  </div>
-                  <div class="addToCart">
-                    <a href="">Add to Cart <i class="fa-solid fa-cart-shopping"></i></a>
-                  </div>
-                </div>
+              <button class="add-cart"> Add to Cart <i class='fa-solid fa-cart-shopping '></i></button>
+              
           </div>
         </div>
         <div class="col-md-4">
           <div class="sub_shirt">
-              <img class="add" src="/MyWebProject/img/ad1.png" alt="">
+              <img class="product-img" src="/MyWebProject/img/ad1.png" alt="">
               <div class="information">
                 <p class="_title-shirt">Adidas Forum Low White Black</p>
                 <p class="stock">In Stock</p>
-                <p class="type_jersey">Men’s Shoes</p>
-                <p class="color">3 Color</p>
+                <p class="type_jersey">Men's Shoes</p>
+                <p class="color">3 Colors</p>
                 <p class="price">159$</p>
               </div>
-                <div class="qty">
-                  <label for="">Quantity</label>
-                  <input type="number" min="0" placeholder="0">
-                </div>
-                <div class="_btn">
-                  <div class="_btn_shop">
-                    <a href="">30% OFF</a>
-                  </div>
-                  <div class="addToCart">
-                    <a href="">Add to Cart <i class="fa-solid fa-cart-shopping"></i></a>
-                  </div>
-                </div>
+              <button class="add-cart"> Add to Cart <i class='fa-solid fa-cart-shopping '></i></button>
+              
           </div>
           <div class="sub_shirt">
-              <img class="realAway" src="/MyWebProject/img/ad2.png" alt="">
+              <img class="product-img" src="/MyWebProject/img/ad2.png" alt="">
               <div class="information">
-                <p class="_title-shirt">Adidas Collegiate Navy </p>
+                <p class="_title-shirt">Adidas Forum Collegiate Navy </p>
                 <p class="stock">In Stock</p>
-                <p class="type_jersey">Men’s Shoes</p>
-                <p class="color">7 Color</p>
+                <p class="type_jersey">Men's Shoes</p>
+                <p class="color">7 Colors</p>
                 <p class="price">178$</p>
               </div>
-                <div class="qty">
-                  <label for="">Quantity</label>
-                  <input type="number" min="0" placeholder="0">
-                </div>
-                <div class="_btn">
-                  <div class="_btn_shop">
-                    <a href="">30% OFF</a>
-                  </div>
-                  <div class="addToCart">
-                    <a href="">Add to Cart <i class="fa-solid fa-cart-shopping"></i></a>
-                  </div>
-                </div>
+              <button class="add-cart"> Add to Cart <i class='fa-solid fa-cart-shopping '></i></button>
+              
           </div>
           <div class="sub_shirt">
-              <img class="ad3" src="/MyWebProject/img/ad3.png" alt="">
+              <img class="product-img" src="/MyWebProject/img/ad3.png" alt="">
               <div class="information">
                 <p class="_title-shirt">Adidas patike courtset</p>
                 <p class="stock">In Stock</p>
-                <p class="type_jersey">Men’s Shoes</p>
+                <p class="type_jersey">Men's Shoes</p>
                 <p class="color">9 Color</p>
                 <p class="price">125$</p>
               </div>
-                <div class="qty">
-                  <label for="">Quantity</label>
-                  <input type="number" min="0" placeholder="0">
-                </div>
-                <div class="_btn">
-                  <div class="_btn_shop">
-                    <a href="">30% OFF</a>
-                  </div>
-                  <div class="addToCart">
-                    <a href="">Add to Cart <i class="fa-solid fa-cart-shopping"></i></a>
-                  </div>
-                </div>
+              <button class="add-cart"> Add to Cart <i class='fa-solid fa-cart-shopping '></i></button>
+              
           </div>
         </div>
         <div class="col-md-4">
           <div class="sub_shirt">
-              <img class="ch1" src="/MyWebProject/img/ch1.png" alt="">
+              <img class="product-img" src="/MyWebProject/img/ch1.png" alt="">
               <div class="information">
                 <p class="_title-shirt">Gucci Men's Ace</p>
                 <p class="stock">In Stock</p>
-                <p class="type_jersey">Men’s Shoes</p>
+                <p class="type_jersey">Men's Shoes</p>
                 <p class="color">1 Color</p>
                 <p class="price">601$</p>
               </div>
-                <div class="qty">
-                  <label for="">Quantity</label>
-                  <input type="number" min="0" placeholder="0">
-                </div>
-                <div class="_btn">
-                  <div class="_btn_shop">
-                    <a href="">10% OFF</a>
-                  </div>
-                  <div class="addToCart">
-                    <a href="">Add to Cart <i class="fa-solid fa-cart-shopping"></i></a>
-                  </div>
-                </div>
+              <button class="add-cart"> Add to Cart <i class='fa-solid fa-cart-shopping '></i></button>
+              
           </div>
           <div class="sub_shirt">
-              <img class="ch2" src="/MyWebProject/img/ch2.png" alt="">
+              <img class="product-img" src="/MyWebProject/img/ch2.png" alt="">
               <div class="information">
                 <p class="_title-shirt">Gucci MAC80</p>
                 <p class="stock">In Stock</p>
-                <p class="type_jersey">Men’s Shoes</p>
+                <p class="type_jersey">Men's Shoes</p>
                 <p class="color">1 Color</p>
                 <p class="price">649$</p>
               </div>
-                <div class="qty">
-                  <label for="">Quantity</label>
-                  <input type="number" min="0" placeholder="0">
-                </div>
-                <div class="_btn">
-                  <div class="_btn_shop">
-                    <a href="">10% OFF</a>
-                  </div>
-                  <div class="addToCart">
-                    <a href="">Add to Cart <i class="fa-solid fa-cart-shopping"></i></a>
-                  </div>
-                </div>
+              <button class="add-cart"> Add to Cart <i class='fa-solid fa-cart-shopping '></i></button>
+              
           </div>
           <div class="sub_shirt">
-              <img src="/MyWebProject/img/ch3.png" alt="">
+              <img class="product-img" src="/MyWebProject/img/ch3.png" alt="">
               <div class="information">
                 <p class="_title-shirt">Gucci Horsebit Loafers</p>
                 <p class="stock">In Stock</p>
-                <p class="type_jersey">Men’s Shoes</p>
-                <p class="color">4 Color</p>
+                <p class="type_jersey">Men's Shoes</p>
+                <p class="color">4 Colors</p>
                 <p class="price">750$</p>
               </div>
-                <div class="qty">
-                  <label for="">Quantity</label>
-                  <input type="number" min="0" placeholder="0">
-                </div>
-                <div class="_btn">
-                  <div class="_btn_shop">
-                    <a href="">10% OFF</a>
-                  </div>
-                  <div class="addToCart">
-                    <a href="">Add to Cart <i class="fa-solid fa-cart-shopping"></i></a>
-                  </div>
-                </div>
+              <button class="add-cart"> Add to Cart <i class='fa-solid fa-cart-shopping '></i></button>
+              
           </div>
         </div>
       </div>
