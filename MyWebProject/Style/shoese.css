@@ -160,6 +160,7 @@ nav .fa{
         height: 100px;
         background-color: black;
     }
+    .mySlides {display:none;}
 
     /* logo team */
     /* .jersey{
