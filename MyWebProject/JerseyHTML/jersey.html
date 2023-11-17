@@ -25,11 +25,31 @@
 <body>
   <section class="header">
     <div class="top_head">
-        <ul>
-          <li><a href="login.html"><i class="fa-solid fa-circle-user"></i></a></li>
-          <li><a href="addToCart.html"><i class="fa-solid fa-cart-shopping"></i></a></li>
-        </ul>
+      <ul>
+        <li><a href="login.html"><i class="fa-solid fa-circle-user"></i></a></li>
+        <li><i class="fa-solid fa-cart-shopping" id="cart-icon"></i></li>
+      </ul>
+      <div class="cart">
+        <h2 class="cart-title">Your Cart</h2>
+
+          <!-- Content -->
+          <div class="cart-content">
+          
+
+          </div>
+
+          <!-- Total -->
+          <div class="total">
+              <div class="total-title">Total</div>
+              <div class="total-price">$0.00</div>
+          </div>
+
+          <!-- Buy Button -->
+          <button type="button" class="btn-buy">Buy Now</button>
+          <!-- cart close -->
+          <i class="fa fa-times" id="cart-close"></i>
       </div>
+  </div>
     <nav class="nav_bar">
       <a href="index.html"><img src="/MyWebProject/img/logo.png" alt=""></a>
       <div class="list" id="list">
