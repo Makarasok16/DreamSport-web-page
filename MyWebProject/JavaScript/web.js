@@ -9,11 +9,13 @@ function hideMenu(){
 
 function shopNow_1(){
   var a = 90 ;
+  let 
   var qty = document.getElementById("qty").value;
 
   var t = a * parseInt(qty);
   alert(t);
 }
+
 
 var myIndex = 0;
 carousel();
