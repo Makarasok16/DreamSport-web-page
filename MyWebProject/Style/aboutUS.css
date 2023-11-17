@@ -7,9 +7,9 @@ img {
     width: 120px;
     height: auto;
 }
-body {
+.About{
     
-    background-image: url(/img/back.jpeg);
+    background-image: url(/MyWebProject/img/back.jpeg);
     background-size: cover;
     background-position: center;
     backdrop-filter: blur(3px);

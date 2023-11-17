@@ -4,13 +4,33 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AboutUs</title>
-    <link rel="stylesheet" href="../Style/style.css">
+    <link rel="stylesheet" href="/MyWebProject/Style/aboutUS.css">
+    <link rel="stylesheet" href="/MyWebProject/Style/jersey.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
+    <section class="header">
+        <div class="top_head">
+            <ul>
+                <li><a href="login.html"><i class="fa-solid fa-circle-user"></i></a></li>
+                <li><a href="addToCart.html"><i class="fa-solid fa-cart-shopping"></i></a></li>
+            </ul>
+          </div>
+        <nav class="nav_bar">
+          <a href="index.html"><img src="/MyWebProject/img/logo.png" alt=""></a>
+          <div class="list" id="list">
+            <i class="fa fa-times" onclick="hideMenu()"></i>
+            <ul>
+              <li><a  href="index.html">HOME</a></li>
+              <li><a href="shoes.html">SHOES</a></li>
+              <li><a  href="jersey.html">JERSEY</a></li>
+              <li><a id="home" href="aboutUS.html">ABOUT US</a></li>
+            </ul>
+          </div>
+          <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+      </section>
     <section class="About">
-        <div class="title">
-            <button class="btn-title"><h2>About Us</h2></button>
-        </div>
         <div class="member-1">
             <div>
                 <img src="../img/1.png">
@@ -69,5 +89,29 @@
             </div>
         </div>
     </section>
+
+    <section class="footer">
+        <div class="footer_web">
+          <div class="left">
+            <p  class="ques"> May we help you?</p>
+            <p class="contact"><a href="">Contact Us</a></p>
+            <p class="email"><a href="">Email</a></p>
+            <a target="_blank" href="https://web.facebook.com/makara.sok.9275"><i class="fa-brands fa-facebook"></i></a>
+            <i class="fa-brands fa-telegram"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <br><br>
+            <p><i class="fa-solid fa-copyright"></i> The Dream Sport 2023</p>
+          </div>
+          <div class="right">
+            <img src="/MyWebProject/img/logoWhite.png" alt="">
+            <p class="text">
+              Discover a hidden gem for shoe enthusiasts at our boutique shoe shop, where elegance and individuality unite. Step into a world of carefully curated, unique footwear collections that speak to your distinctive taste. Uncover the perfect pair that complements your style and personality, making every step a statement.
+            </p>
+          </div>
+  
+        </div>
+    </section>
 </body>
 </html>
+<script src="../JavaScript/web.js"></script>
