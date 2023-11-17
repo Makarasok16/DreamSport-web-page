@@ -189,6 +189,6 @@ function CartBoxComponent(title, price, imgSrc) {
             <input type="number" value="1" class="cart-quantity">
         </div>
         <!-- REMOVE CART  -->
-        <i class='fa fa-times cart-remove'></i>
+        <i class="fa-solid fa-trash cart-remove"></i>
     </div>`;
 }
