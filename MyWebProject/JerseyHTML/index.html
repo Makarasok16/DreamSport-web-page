@@ -21,9 +21,11 @@
 
 
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-
+<link rel="stylesheet"href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 </head>
 <body>
+ 
   <section class="header">
     <div class="top_head">
         <ul>
@@ -53,11 +55,11 @@
         <img class="mySlides" src="/MyWebProject/img/b2.png" style="width:100%">
         <img class="mySlides" src="/MyWebProject/img/b3.png" style="width:100%">
       </div>
-      
+   </div>
+  </section>    
         
       
-    </div>
-  </section>
+
 
 <!-- /*------ Home page ------*/ -->
 
@@ -67,11 +69,100 @@
       <p>Elevate your style and comfort with our premium, handcrafted shoes that combine timeless design <br> and unparalleled craftsmanship for a truly exceptional footwear experience.    </p>
       <div class="btnShop"><a href="/MyWebProject/JerseyHTML//shoes.html"><button>Shop Now</button></a></div>
   
-     
-     
-    
- 
-</section>
+     </section>
+
+     <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">Jordan
+          <div class="s1">
+            <img class="ch2" src="/MyWebProject/img/ch2.png" alt="">
+            <div class="txt">
+              <p class="_title-shirt">Gucci MAC80</p>
+              <p class="stock">In Stock</p>
+              <p class="type_jersey">Men’s Shoes</p>
+              <p class="color">1 Color</p>
+              <p class="price">649$</p>
+            </div>
+              <button class="btn-cart">Add to Cart<i class="fa-solid fa-cart-shopping"></i></button>
+        </div> 
+        </div>
+        <div class="swiper-slide">Slide 2</div>
+        <div class="swiper-slide">Slide 3</div>
+        <div class="swiper-slide">Slide 4</div>
+        <div class="swiper-slide">Slide 5</div>
+        <div class="swiper-slide">Slide 6</div>
+        <div class="swiper-slide">Slide 7</div>
+        <div class="swiper-slide">Slide 8</div>
+        <div class="swiper-slide">Slide 9</div>
+      </div>
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-pagination"></div>
+    </div>
+  
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        cssMode: true,
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        pagination: {
+          el: ".swiper-pagination",
+        },
+        mousewheel: true,
+        keyboard: true,
+      });
+    </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
   <section class="footer">
