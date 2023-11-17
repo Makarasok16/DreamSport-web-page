@@ -690,7 +690,7 @@ html,
 
     .swiper-slide {
       display: block;
-      border: 1px solid red;
+      border: 1px solid rgb(252, 251, 251)(255, 255, 255);
       max-width: 500px;
 
       /* width: 200px;
@@ -725,3 +725,4 @@ html,
     {
         width: 2000px;
     }
+   

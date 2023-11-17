@@ -28,11 +28,31 @@
  
   <section class="header">
     <div class="top_head">
-        <ul>
-            <li><a href="login.html"><i class="fa-solid fa-circle-user"></i></a></li>
-            <li><a href="addToCart.html"><i class="fa-solid fa-cart-shopping"></i></a></li>
-        </ul>
+      <ul>
+        <li><a href="login.html"><i class="fa-solid fa-circle-user"></i></a></li>
+        <li><i class="fa-solid fa-cart-shopping" id="cart-icon"></i></li>
+      </ul>
+      <div class="cart">
+        <h2 class="cart-title">Your Cart</h2>
+
+          <!-- Content -->
+          <div class="cart-content">
+          
+
+          </div>
+
+          <!-- Total -->
+          <div class="total">
+              <div class="total-title">Total</div>
+              <div class="total-price">$0.00</div>
+          </div>
+
+          <!-- Buy Button -->
+          <button type="button" class="btn-buy">Buy Now</button>
+          <!-- cart close -->
+          <i class="fa fa-times" id="cart-close"></i>
       </div>
+  </div>
     <nav class="nav_bar">
       <a href="index.html"><img src="/MyWebProject/img/logo.png" alt=""></a>
       <div class="list" id="list">
@@ -68,14 +88,40 @@
       <h1>Buy Shoes Online With The Best Offer</h1>
       <p>Elevate your style and comfort with our premium, handcrafted shoes that combine timeless design <br> and unparalleled craftsmanship for a truly exceptional footwear experience.    </p>
       <div class="btnShop"><a href="/MyWebProject/JerseyHTML//shoes.html"><button>Shop Now</button></a></div>
-  
+ 
      </section>
 
      <div class="swiper mySwiper">
       <div class="swiper-wrapper">
-        <div class="swiper-slide">Jordan
+        <div class="swiper-slide">
           <div class="s1">
-            <img class="ch2" src="/MyWebProject/img/ch2.png" alt="">
+            <img class="product-img" src="/MyWebProject/img/j1.png" alt="">
+            <div class="txt">
+              <p class="_title-shirt">Ari Jordan 1 Retro OG</p>
+              <p class="stock">In Stock</p>
+              <p class="type_jersey">Men’s Shoes</p>
+              <p class="color">1 Color</p>
+              <p class="price">2598$ </p>
+            </div>
+              <button class="add-cart">Add to Cart<i class="fa-solid fa-cart-shopping"></i></button>
+        </div> 
+        </div>
+        <div class="swiper-slide">
+          <div class="s1">
+            <img class="product-img" src="/MyWebProject/img/j2.png" alt="">
+            <div class="txt">
+              <p class="_title-shirt">Jordan 1 Off-White</p>
+            <p class="stock">In Stock</p>
+            <p class="type_jersey">Men’s Shoes</p>
+            <p class="color">2 Colors</p>
+            <p class="price">1356$</p>
+            </div>
+              <button class="add-cart">Add to Cart<i class="fa-solid fa-cart-shopping"></i></button>
+        </div> 
+        </div>
+        <div class="swiper-slide">
+          <div class="s1">
+            <img class="product-img" src="/MyWebProject/img/ch2.png" alt="">
             <div class="txt">
               <p class="_title-shirt">Gucci MAC80</p>
               <p class="stock">In Stock</p>
@@ -83,22 +129,148 @@
               <p class="color">1 Color</p>
               <p class="price">649$</p>
             </div>
-              <button class="btn-cart">Add to Cart<i class="fa-solid fa-cart-shopping"></i></button>
+              <button class="add-cart">Add to Cart<i class="fa-solid fa-cart-shopping"></i></button>
         </div> 
         </div>
-        <div class="swiper-slide">Slide 2</div>
-        <div class="swiper-slide">Slide 3</div>
-        <div class="swiper-slide">Slide 4</div>
-        <div class="swiper-slide">Slide 5</div>
-        <div class="swiper-slide">Slide 6</div>
-        <div class="swiper-slide">Slide 7</div>
-        <div class="swiper-slide">Slide 8</div>
-        <div class="swiper-slide">Slide 9</div>
+        <div class="swiper-slide">
+          <div class="s1">
+            <img class="product-img" src="/MyWebProject/img/ad3.png" alt="">
+            <div class="txt">
+              <p class="_title-shirt">Adidas patike courtset</p>
+                <p class="stock">In Stock</p>
+                <p class="type_jersey">Men's Shoes</p>
+                <p class="color">9 Color</p>
+                <p class="price">125$</p>
+            </div>
+              <button class="add-cart">Add to Cart<i class="fa-solid fa-cart-shopping"></i></button>
+        </div> 
+          
+        </div>
+        <div class="swiper-slide">
+          <div class="s1">
+            <img class="product-img" src="/MyWebProject/img/ch3.png" alt="">
+            <div class="txt">
+              <p class="_title-shirt">Gucci Horsebit Loafers</p>
+              <p class="stock">In Stock</p>
+              <p class="type_jersey">Men's Shoes</p>
+              <p class="color">4 Colors</p>
+              <p class="price">750$</p>
+            </div>
+              <button class="add-cart">Add to Cart<i class="fa-solid fa-cart-shopping"></i></button>
+        </div> 
+        </div>
+        <div class="swiper-slide">
+          <div class="s1">
+            <img class="product-img" src="/MyWebProject/img/ad1.png" alt="">
+            <div class="txt">
+              <p class="_title-shirt">Adidas Forum Low White Black</p>
+              <p class="stock">In Stock</p>
+              <p class="type_jersey">Men's Shoes</p>
+              <p class="color">3 Colors</p>
+              <p class="price">159$</p>
+            </div>
+              <button class="add-cart">Add to Cart<i class="fa-solid fa-cart-shopping"></i></button>
+        </div> 
+        </div>
+        
       </div>
       <div class="swiper-button-next"></div>
       <div class="swiper-button-prev"></div>
       <div class="swiper-pagination"></div>
     </div>
+
+<br>
+
+    <!-- //dev2 -->
+
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <div class="s1">
+            <img class="product-img" src="/MyWebProject/img/ch2.png" alt="">
+            <div class="txt">
+              <p class="_title-shirt">Ari Jordan 1 Retro OG</p>
+              <p class="stock">In Stock</p>
+              <p class="type_jersey">Men’s Shoes</p>
+              <p class="color">1 Color</p>
+              <p class="price">2598$ </p>
+            </div>
+              <button class="add-cart">Add to Cart<i class="fa-solid fa-cart-shopping"></i></button>
+        </div> 
+        </div>
+        <div class="swiper-slide">Slide 2
+          <div class="s1">
+            <img class="product-img" src="/MyWebProject/img/j1.png" alt="">
+            <div class="txt">
+              <p class="_title-shirt">Gucci MAC80</p>
+              <p class="stock">In Stock</p>
+              <p class="type_jersey">Men’s Shoes</p>
+              <p class="color">1 Color</p>
+              <p class="price">649$</p>
+            </div>
+              <button class="add-cart">Add to Cart<i class="fa-solid fa-cart-shopping"></i></button>
+        </div> 
+        </div>
+        <div class="swiper-slide">Slide 3
+          <div class="s1">
+            <img class="product-img" src="/MyWebProject/img/ch2.png" alt="">
+            <div class="txt">
+              <p class="_title-shirt">Gucci MAC80</p>
+              <p class="stock">In Stock</p>
+              <p class="type_jersey">Men’s Shoes</p>
+              <p class="color">1 Color</p>
+              <p class="price">649$</p>
+            </div>
+              <button class="add-cart">Add to Cart<i class="fa-solid fa-cart-shopping"></i></button>
+        </div> 
+        </div>
+        <div class="swiper-slide">Slide 4
+          <div class="s1">
+            <img class="product-img" src="/MyWebProject/img/ch2.png" alt="">
+            <div class="txt">
+              <p class="_title-shirt">Gucci MAC80</p>
+              <p class="stock">In Stock</p>
+              <p class="type_jersey">Men’s Shoes</p>
+              <p class="color">1 Color</p>
+              <p class="price">649$</p>
+            </div>
+              <button class="add-cart">Add to Cart<i class="fa-solid fa-cart-shopping"></i></button>
+        </div> 
+        </div>
+        <div class="swiper-slide">Slide 5
+          <div class="s1">
+            <img class="product-img" src="/MyWebProject/img/ch2.png" alt="">
+            <div class="txt">
+              <p class="_title-shirt">Gucci MAC80</p>
+              <p class="stock">In Stock</p>
+              <p class="type_jersey">Men’s Shoes</p>
+              <p class="color">1 Color</p>
+              <p class="price">649$</p>
+            </div>
+              <button class="add-cart">Add to Cart<i class="fa-solid fa-cart-shopping"></i></button>
+        </div> 
+        </div>
+        <div class="swiper-slide">Slide 6
+          <div class="s1">
+            <img class="product-img" src="/MyWebProject/img/j1.png" alt="">
+            <div class="txt">
+              <p class="_title-shirt">Gucci MAC80</p>
+              <p class="stock">In Stock</p>
+              <p class="type_jersey">Men’s Shoes</p>
+              <p class="color">1 Color</p>
+              <p class="price">649$</p>
+            </div>
+              <button class="add-cart">Add to Cart<i class="fa-solid fa-cart-shopping"></i></button>
+        </div> 
+        </div>
+        
+      </div>
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-pagination"></div>
+    </div>
+
+
   
     <!-- Swiper JS -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
