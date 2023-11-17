@@ -362,11 +362,11 @@ nav .fa{
 /*------- font --------*/
 @font-face{
     font-family: adidas bold;
-    src: url(/font/texgyreadventor-bold.otf);
+    src: url(/MyWebProject/font/texgyreadventor-bold.otf);
 }
 @font-face{
     font-family: adidas regular;
-    src: url(/font/texgyreadventor-regular.otf);
+    src: url(/MyWebProject/font/texgyreadventor-regular.otf);
 }
 p{
     font-family: adidas regular;
