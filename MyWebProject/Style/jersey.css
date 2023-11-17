@@ -1,12 +1,25 @@
 /*------- Test HomePage --------*/
+.top_head{
+    position: fixed;
+    z-index: 100;
+}
+.nav_bar{
+    position: fixed;
+    z-index: 10;
+    margin-top: 30px;
+}
+.jersey{
+    margin-top: 180px;
+}
 #home{
     color: #fff;
     font-weight: bold;
 }
 .home{
+    margin-top: 100px;
     min-height: 100vh;
     width: 100%;
-    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(/MyWebProject/img/backgroundImg.jpg);
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(../img/backgroundImg.jpg);
     background-position: center;
     background-size: cover;
     position: relative;
@@ -51,7 +64,7 @@
     box-shadow: -2px solid 4px hsl(0 4% 15% / 10%);
     border: 1px solid red;
     transition: 1.5s;
-    z-index: 3;
+    z-index: 1000;
 }
 .cart.active{
     right: 0;
@@ -231,6 +244,9 @@ nav img{
     display: block;
     margin: auto;
     transition: 0.5s;
+    z-index: 1000;
+    
+
 }
 .list ul li:hover::after{
     width: 100%;
@@ -270,11 +286,24 @@ nav .fa{
 
 /* --- Banner -----*/
 
-    .banner_box{
+.banner_box{
+    width: 100%;
+    height: 100px;
+    background-color: black;
+    position: fixed;
+    margin-top: 100px;
+    z-index: 10;
+}
+.banner_box_home,.banner_box_shoes{
+
         width: 100%;
         height: 100px;
         background-color: black;
-    }
+        position: fixed;
+        margin-top: 80px;
+        z-index: 10;
+
+}
     .mySlides {display:none;}
      
 
@@ -731,5 +760,13 @@ html,
     .s1 >.ch2 img
     {
         width: 2000px;
+    }
+
+    .s2>img{
+        width: 45%;
+        position: relative;
+    }
+    #_resize1,#_resize2,#_resize3{
+        width: 40%;
     }
    
