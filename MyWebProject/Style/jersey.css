@@ -460,6 +460,10 @@ nav .fa{
     margin-bottom: 0%;
     
 }
+
+i{
+    color: #fff;
+}
 .footer_web{
     justify-content: space-between;
 }
@@ -761,6 +765,10 @@ html,
     {
         width: 2000px;
     }
+    .swiper-slide:hover{
+        box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.4);
+        transition: 1s;
+    }
 
     .s2>img{
         width: 45%;
@@ -768,5 +776,7 @@ html,
     }
     #_resize1,#_resize2,#_resize3{
         width: 40%;
+
     }
+
    
