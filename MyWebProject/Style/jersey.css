@@ -167,11 +167,14 @@ nav .fa{
 }
 
 /* --- Banner -----*/
+
     .banner_box{
         width: 100%;
         height: 100px;
         background-color: black;
     }
+    .mySlides {display:none;}
+     
 
     .logoTeam{
         background-color: #47DE44;
