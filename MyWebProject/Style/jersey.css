@@ -534,17 +534,22 @@ h1{
     color:#fff;
 }
 .Login,.Sign_up{
-    background: url(/img/1.jpg) no-repeat;
     background-size: cover;
     backdrop-filter: blur(10px);
+    background-image: url(/MyWebProject/img/2.jpeg);
+    position: relative;
+    top: 50px;
+    margin-bottom: 50px;
 }
+
 .Login, .Sign_up {
+    position: relative;
+    margin-top: 0px;
     display: grid;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    width: 100%;
-    width: 100%;    
+    width: 100%; 
 }
 .wrapper-login{
     position: relative;
@@ -777,6 +782,12 @@ html,
     #_resize1,#_resize2,#_resize3{
         width: 40%;
 
+    }
+
+    /* ABOUT US */
+    .About{
+        position: relative;
+        margin-top: 80px;
     }
 
    
