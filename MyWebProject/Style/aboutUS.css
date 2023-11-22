@@ -13,10 +13,11 @@ img {
     background-size: cover;
     background-position: center;
     backdrop-filter: blur(3px);
+
 }
 .About {
     width: 100%;
-    min-height: 100vh;
+    min-height: 10vh;
 }
 .title {
     text-align: center;
@@ -167,3 +168,4 @@ img {
         background:  rgb(54, 134, 124);
     }
 }
+
