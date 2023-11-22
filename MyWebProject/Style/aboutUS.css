@@ -7,6 +7,9 @@ img {
     width: 120px;
     height: auto;
 }
+#dreamIMG{
+    width: 150px;
+}
 .About{
     
     background-image: url(/MyWebProject/img/2.jpeg);
@@ -49,6 +52,12 @@ img {
     border-radius: 10px;
     padding: 10px;
     background:  rgb(74, 74, 186);
+}
+img:hover{
+    width: 200px;
+    height: auto;
+    cursor: pointer;
+    transition: 0.8s;
 }
 .member-2 {
     position: relative;
@@ -102,7 +111,7 @@ img {
     background: rgb(54, 134, 124);
 }
 
-@media (max-width: 700px) {
+@media (max-width: 768px) {
     body {
         width: 100%;
     }
